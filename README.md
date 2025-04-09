@@ -65,15 +65,6 @@ Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/wome
 
 ---
 
-## 🚀 How to Run
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/riya-kondawar/Chatbot-NLP.git
-cd Chatbot-NLP
-
----
-
 ## 🧪 Sample Customer Reviews for Testing
 
 Here are **5 real customer reviews** from the Women's E-Commerce Clothing Reviews dataset that you can use to test the chatbot's sentiment analysis capability.
@@ -91,3 +82,6 @@ Here are **5 real customer reviews** from the Women's E-Commerce Clothing Review
 
 5. 🟡 Review 5 
 > **"Nice design but the sleeves are a bit tight. Still wearable though, so I kept it."**
+
+---
+
