@@ -58,8 +58,6 @@ Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/wome
 📦 [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)  
 - ~23,000 reviews
 - Used the `Review Text` and `Recommended IND` fields for model training
-<<<<<<< HEAD
-=======
 
 ---
 
@@ -71,7 +69,6 @@ Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/wome
 - **Libraries Used**: 
   - `pandas`, `sklearn`, `nltk`, `pickle`
 
->>>>>>> 867328b9cff2cca5a10bc5e06f3aa0ef5b9cf3c1
 ---
 
 ## 🧪 Sample Customer Reviews for Testing
