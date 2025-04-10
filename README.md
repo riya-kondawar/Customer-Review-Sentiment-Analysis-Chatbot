@@ -3,6 +3,7 @@
 An intelligent chatbot built using **NLP and Machine Learning** that classifies customer reviews as **Positive** or **Negative**, while also displaying detailed preprocessing steps like tokenization, stemming, lemmatization, and keyword extraction.
 
 Deployed using **Streamlit** for a smooth and interactive user experience.
+
 ---
 
 ## 🛠️ Technologies Used
@@ -12,6 +13,7 @@ NLP Processing: NLTK
 Data Handling: Pandas
 Model Deployment: Streamlit Cloud
 Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews) |
+
 ---
 
 ## 🚀 Features
@@ -21,6 +23,7 @@ Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/wome
 - Tokenization, Lemmatization, Stopword Removal
 - Displays extracted important keywords
 - Simple & clean web interface with Streamlit
+
 ---
 
 ## 🧠 How It Works
@@ -37,6 +40,7 @@ Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/wome
    - Preprocess and vectorize
    - Predict sentiment
    - Display prediction and key keywords
+
 ---
 
 ## 🖼️ App Screenshots
@@ -45,6 +49,7 @@ Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/wome
 ![Chatbot UI](assets/ss1.png)
 
 ![Chatbot UI](assets/ss2.png)
+
 ---
 
 ## 📊 Dataset
