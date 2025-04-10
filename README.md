@@ -1,9 +1,42 @@
-# 💬 Customer Review Sentiment Analysis Chatbot
+# 🤖 Customer Review Sentiment Analysis Chatbot
 
 An intelligent chatbot built using **NLP and Machine Learning** that classifies customer reviews as **Positive** or **Negative**, while also displaying detailed preprocessing steps like tokenization, stemming, lemmatization, and keyword extraction.
 
 Deployed using **Streamlit** for a smooth and interactive user experience.
+---
 
+## 🛠️ Technologies Used
+
+Frontend: Streamlit
+NLP Processing: NLTK
+Data Handling: Pandas
+Model Deployment: Streamlit Cloud
+Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews) |
+---
+
+## 🚀 Features
+
+- Real-time text classification using ML
+- TF-IDF Vectorizer + Logistic Regression
+- Tokenization, Lemmatization, Stopword Removal
+- Displays extracted important keywords
+- Simple & clean web interface with Streamlit
+---
+
+## 🧠 How It Works
+
+1. **Data Preprocessing** (`process.ipynb`):
+   - Clean text, remove punctuation
+   - Tokenize, Lemmatize, Remove Stopwords
+   - Vectorize using TF-IDF
+   - Train `LogisticRegression` model
+   - Save model + vectorizer as `.pkl` files
+
+2. **Web App Interface** (`app.py`):
+   - Input review from user
+   - Preprocess and vectorize
+   - Predict sentiment
+   - Display prediction and key keywords
 ---
 
 ## 🖼️ App Screenshots
@@ -12,38 +45,6 @@ Deployed using **Streamlit** for a smooth and interactive user experience.
 ![Chatbot UI](assets/ss1.png)
 
 ![Chatbot UI](assets/ss2.png)
-
----
-
-## 🛠️ Technologies Used
-
-Frontend: Streamlit
-NLP Processing:NLTK
-Data Handling: Pandas
-Model Deployment: Streamlit Cloud
-Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews) |
-
----
-
-## 📌 Features
-
-- 🔍 Accepts customer reviews as text input
-- 🧼 Cleans and preprocesses text using:
-  - Lowercasing
-  - Removing punctuation
-  - Tokenization
-  - Stopword Removal
-  - Stemming
-  - Lemmatization
-- 🧠 Predicts review sentiment using trained ML model
-- 💡 Displays:
-  - Cleaned text
-  - Tokens
-  - Stemmed tokens
-  - Lemmatized tokens
-  - Extracted keywords (key influencing words)
-- ✅ Outputs: **Positive** or **Negative** sentiment with emoji feedback
-
 ---
 
 ## 📊 Dataset
@@ -52,26 +53,6 @@ Dataset Source: [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/wome
 📦 [Kaggle Dataset](https://www.kaggle.com/datasets/nicapotato/womens-ecommerce-clothing-reviews)  
 - ~23,000 reviews
 - Used the `Review Text` and `Recommended IND` fields for model training
-
----
-
-## 🧠 Model
-
-- **Vectorization**: TF-IDF (Term Frequency–Inverse Document Frequency)
-- **Algorithm**: Logistic Regression
-- **Accuracy**: ~92%
-- **Libraries Used**: 
-  - `pandas`, `sklearn`, `nltk`, `pickle`
-
----
-
-## 🚀 How to Run
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/riya-kondawar/Chatbot-NLP.git
-cd Chatbot-NLP
-
 ---
 
 ## 🧪 Sample Customer Reviews for Testing

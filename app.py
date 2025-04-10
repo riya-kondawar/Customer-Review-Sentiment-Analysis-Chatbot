@@ -5,9 +5,14 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('stopwords')
+
+# Avoid re-downloading if already available
+for pkg in ['punkt', 'wordnet', 'stopwords']:
+    try:
+        nltk.data.find(f'tokenizers/{pkg}' if pkg == 'punkt' else f'corpora/{pkg}')
+    except LookupError:
+        nltk.download(pkg)
+
 
 # Load model and vectorizer
 with open("models/sentiment_model.pkl", "rb") as f:
@@ -52,7 +57,6 @@ if st.button("Analyze Sentiment"):
         vec_input = vectorizer.transform([" ".join(lemmatized)])
         prediction = model.predict(vec_input)[0]
 
-        # Display Results
         st.subheader("🎯 Final Sentiment Prediction")
         if prediction == "positive":
             st.success("✅ Sentiment: **😊 Positive**")
@@ -65,43 +69,3 @@ if st.button("Analyze Sentiment"):
         else:
             st.write("No significant keywords found.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# import streamlit as st
-# from utils.sentiment import analyze_sentiment_local, analyze_sentiment_gemini
-# import os
-# from dotenv import load_dotenv
-
-# load_dotenv()
-# USE_GEMINI = os.getenv("USE_GEMINI", "yes").lower() == "yes"
-
-# st.set_page_config(page_title="Sentiment Chatbot", layout="centered")
-# st.title("💬 Customer Review Sentiment Chatbot")
-
-# user_input = st.chat_input("Enter your review...")
-
-# if user_input:
-#     with st.chat_message("user"):
-#         st.write(user_input)
-
-#     with st.chat_message("assistant"):
-#         if USE_GEMINI:
-#             result = analyze_sentiment_gemini(user_input)
-#         else:
-#             result = analyze_sentiment_local(user_input)
-#         st.markdown(result)
